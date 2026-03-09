@@ -1,0 +1,14 @@
+# This file defines the monomer which is composed of 1 neutral bead
+# Bonded and non bonded parameters and mass are imported from forcefield.lt file
+# using import and inherits keywords
+# @ --> type ; $ --> ID in LAMMPS lingo
+
+import "forcefield.lt"
+
+Monomer inherits ForceField {
+    # atomID molID atomType charge  x  y  z
+
+    write("Data Atoms") {
+      $atom:a $mol:... @atom:a  0.0  0.0 0.0 0.0
+  }
+}

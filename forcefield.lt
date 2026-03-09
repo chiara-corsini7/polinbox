@@ -1,0 +1,38 @@
+# This file contains the force field parameters needed to describe the monomer
+# @ --> type ; $ --> ID in LAMMPS lingo
+# Settings file: define force field parameters for bonded and non bonded interactions
+# Init file: main input file where you define the conditions of the simulation
+# E.G. units, boundary conditions, force field functional form and more
+
+ForceField {
+
+  # Choosing the particle masses:
+     
+  write_once("Data Masses") {
+    @atom:a          ---
+  }
+
+  write_once("In Settings") {
+    #             i      j   eps     sigma
+    pair_coeff @atom:a @atom:a  ---  ---
+  }
+
+
+  write_once("In Settings") {
+    #              bond-type       K    r0 sigma epsilon
+    bond_coeff     @bond:Backbone  --- --- --- ---
+  }
+
+
+  write_once("In Init") {
+    # Complete looking at LAMMPS documentation
+    units           ---  
+    boundary        ---
+    atom_style      full
+    bond_style      ---
+    pair_style      --- 
+           
+
+  }
+
+}  

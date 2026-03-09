@@ -1,0 +1,155 @@
+import "monomer.lt"
+import "forcefield.lt"
+
+
+Polymer inherits Monomer {
+
+
+
+  create_var {$mol}
+  # The line above forces all monomer subunits to share the same molecule-ID
+  # (Note: The molecule-ID number is optional and is usually ignored by LAMMPS.)
+
+
+
+
+  # ----- list of monomers: -----
+  #
+  # (Note: move(), rot(), and rotvv() commands control the position
+  #  of each monomer.  (See the moltemplate manual for an explanation
+  #  of what they do.)  Commands enclosed in push() are cumulative
+  #  and remain in effect until removed by pop().)
+
+
+
+  push(move(0,0,0))
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(0.0,0.0,0.0))
+  mon[0] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(1.0,0.0,0.0))
+  mon[1] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(2.0,0.0,0.0))
+  mon[2] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(3.0,0.0,0.0))
+  mon[3] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(4.0,0.0,0.0))
+  mon[4] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(5.0,0.0,0.0))
+  mon[5] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(6.0,0.0,0.0))
+  mon[6] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(7.0,0.0,0.0))
+  mon[7] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(8.0,0.0,0.0))
+  mon[8] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(9.0,0.0,0.0))
+  mon[9] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(10.0,0.0,0.0))
+  mon[10] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(11.0,0.0,0.0))
+  mon[11] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(12.0,0.0,0.0))
+  mon[12] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(13.0,0.0,0.0))
+  mon[13] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(14.0,0.0,0.0))
+  mon[14] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(15.0,0.0,0.0))
+  mon[15] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(16.0,0.0,0.0))
+  mon[16] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(17.0,0.0,0.0))
+  mon[17] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(18.0,0.0,0.0))
+  mon[18] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  push(rotvv(1.0,0.0,0.0,1.0,0.0,0.0))
+  push(move(19.0,0.0,0.0))
+  mon[19] = new Monomer.rot(0.0,1.0,0.0,0.0)
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+  pop()
+
+
+  write("Data Bonds") {
+    $bond:genp_bond_1 @bond:Backbone $atom:mon[0]/a $atom:mon[1]/a
+    $bond:genp_bond_2 @bond:Backbone $atom:mon[1]/a $atom:mon[2]/a
+    $bond:genp_bond_3 @bond:Backbone $atom:mon[2]/a $atom:mon[3]/a
+    $bond:genp_bond_4 @bond:Backbone $atom:mon[3]/a $atom:mon[4]/a
+    $bond:genp_bond_5 @bond:Backbone $atom:mon[4]/a $atom:mon[5]/a
+    $bond:genp_bond_6 @bond:Backbone $atom:mon[5]/a $atom:mon[6]/a
+    $bond:genp_bond_7 @bond:Backbone $atom:mon[6]/a $atom:mon[7]/a
+    $bond:genp_bond_8 @bond:Backbone $atom:mon[7]/a $atom:mon[8]/a
+    $bond:genp_bond_9 @bond:Backbone $atom:mon[8]/a $atom:mon[9]/a
+    $bond:genp_bond_10 @bond:Backbone $atom:mon[9]/a $atom:mon[10]/a
+    $bond:genp_bond_11 @bond:Backbone $atom:mon[10]/a $atom:mon[11]/a
+    $bond:genp_bond_12 @bond:Backbone $atom:mon[11]/a $atom:mon[12]/a
+    $bond:genp_bond_13 @bond:Backbone $atom:mon[12]/a $atom:mon[13]/a
+    $bond:genp_bond_14 @bond:Backbone $atom:mon[13]/a $atom:mon[14]/a
+    $bond:genp_bond_15 @bond:Backbone $atom:mon[14]/a $atom:mon[15]/a
+    $bond:genp_bond_16 @bond:Backbone $atom:mon[15]/a $atom:mon[16]/a
+    $bond:genp_bond_17 @bond:Backbone $atom:mon[16]/a $atom:mon[17]/a
+    $bond:genp_bond_18 @bond:Backbone $atom:mon[17]/a $atom:mon[18]/a
+    $bond:genp_bond_19 @bond:Backbone $atom:mon[18]/a $atom:mon[19]/a
+  }  # write("Data Bonds") {...
+
+
+}  # Polymer inherits Monomer
+
+
+

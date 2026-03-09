@@ -1,0 +1,4 @@
+#             i      j   eps     sigma
+pair_coeff 1 1  1.0  1.0
+#              bond-type K r0 sigma epsilon
+bond_coeff     1  30.0 1.5 1.0 1.0

@@ -1,0 +1,15 @@
+# This file contains the final set up for the system such as
+# how many polymers to introduce and where to position them in space 
+# polymer topology and force field are imported through import keyword
+
+import "polymer.lt"    
+
+polymer = new Polymer
+
+# Define the periodic boundary conditions for our system
+
+write_once("Data Boundary") {
+  -20.0 20.0 xlo xhi
+  -20.0 20.0 ylo yhi
+  -20.0 20.0 zlo zhi
+}
