@@ -12,7 +12,7 @@ In this tutorial you will learn how to run a simulation of an omopolymer in a bo
 
 Generate initial coordinates and save them in a 3 column file named [coords.raw](coords.raw) containing x, y and z positions of the monomer beads. A trial version is included but you can substitute it with your own. 
 
-## Step 1. Generate the polymer.lt
+## Step 1. Generate polymer.lt
 
 To set up the system you will use [moltemplate](https://www.moltemplate.org/). Moltemplate allows to generate data.lmp and in.lmp for lammps by providing the `.lt` files. It is very powerful and can be used to create initial configurations for very complex systems.
 In this case we will need four `.lt` files to set up our system:
