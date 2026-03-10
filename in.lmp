@@ -1,0 +1,64 @@
+# Add info from system.in.init and
+# add more commands related to force field if needed
+
+...
+
+
+# Read data file using the read_data command
+
+...
+
+
+# Add info from system.in.Settings
+
+...
+
+
+# Energy minimization (Only needed in equilibration)
+
+minimize 1.0e-4 1.0e-6 100 1000
+reset_timestep 0
+
+
+# Define variables using the variable command
+# E.G. Timestep,Temperature,etc.
+
+...
+
+
+# Initialize the velocity to temperature using velocity command
+
+...
+
+
+# Choose the termostat and or barostat you want to use for the simulation
+# E.G. for Brownian Dynamics use fix langevin & fix nve combined
+# (Tdamp is usually 100*timestep)
+
+...
+
+
+# Print output info using thermo_style command
+
+thermo_style custom step cpu etotal ke pe evdwl ecoul elong ebond temp press vol density
+thermo ...
+
+
+# Dump trajectory using dump command
+
+dump ... all custom ...  dump.lammpstrj id mol type mass q xu yu zu
+
+
+# print restart file using the restart command
+
+...
+
+
+# run the simulation using the run command
+
+...
+
+
+# write the final configuration in a data file using the write_data command
+
+...

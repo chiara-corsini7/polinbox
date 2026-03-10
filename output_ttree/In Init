@@ -1,7 +1,0 @@
-    # (Hybrid force fields were not necessary but are used for portability.)
-    units           lj     # <-- temperature has units of energy, kB=1
-    atom_style      full
-    bond_style      fene
-    pair_style      lj/cut  4.0    
-    pair_modify shift yes             
-

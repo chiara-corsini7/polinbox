@@ -1,4 +1,0 @@
-    #             i      j   eps     sigma
-    pair_coeff @/atom:ForceField/a @/atom:ForceField/a  1.0  1.0
-    #              bond-type K r0 sigma epsilon
-    bond_coeff     @/bond:ForceField/Backbone  30.0 1.5 1.0 1.0
